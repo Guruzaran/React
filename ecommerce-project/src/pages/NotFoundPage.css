@@ -1,0 +1,8 @@
+.center-content {
+  height: calc(100vh - 80px); /* Adjust 80px to your Header height */
+  display: flex;
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  text-align: center;
+  padding: 20px;
+}
