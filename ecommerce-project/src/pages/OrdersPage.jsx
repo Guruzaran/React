@@ -2,6 +2,7 @@ import "./OrdersPage.css";
 import { Header } from "../components/Header";
 
 export function OrdersPage() {
+  console.log("reached");
   return (
     <>
       <title>Orders</title>
