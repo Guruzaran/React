@@ -110,9 +110,12 @@
 }
 
 .checkout-page .product-price {
-
   font-weight: 700;
   margin-bottom: 5px;
+}
+
+.quantity-text {
+  width: 50px;
 }
 
 .checkout-page .product-quantity .link-primary {
@@ -152,7 +155,6 @@
 }
 
 .checkout-page .delivery-option-date {
-
   font-weight: 500;
   margin-bottom: 3px;
 }

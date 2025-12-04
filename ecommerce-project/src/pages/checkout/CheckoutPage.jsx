@@ -27,6 +27,11 @@ export function CheckoutPage({ cart, loadCart }) {
 
     fetchDeliveryData();
   }, []);
+  let totalItems = 0;
+
+  cart.map((cartItem) => {
+    totalItems += 1;
+  });
 
   return (
     <>
@@ -43,7 +48,7 @@ export function CheckoutPage({ cart, loadCart }) {
           <div className="checkout-header-middle-section">
             Checkout (
             <a className="return-to-home-link" href="/">
-              3 items
+              {totalItems} items
             </a>
             )
           </div>
@@ -63,7 +68,7 @@ export function CheckoutPage({ cart, loadCart }) {
             cart={cart}
             loadCart={loadCart}
           />
-          <PaymentSummary paymentSummary={paymentSummary} />
+          <PaymentSummary paymentSummary={paymentSummary} loadCart={loadCart} />
         </div>
       </div>
     </>
